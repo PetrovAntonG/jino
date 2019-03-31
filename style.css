@@ -1,0 +1,657 @@
+html {
+    box-sizing: border-box;
+    color: white;
+    font-weight: bolder;
+    font-family:  sans-serif;
+    font-size: 16px;
+    cursor: default;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  .col-grid::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  .back, .back1, .back2 {
+    max-width: 1412px;
+    min-width: 1059px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: 1412px ;
+  }
+
+  .back1 {
+    background-image: url(img/background1.jpg);
+  }
+  .back2 {
+    background-image: url(img/background2.jpg);
+  }
+  .l-wrap {
+    width: 90vw;
+    max-width: 1092px;
+    min-width: 819px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Create account btn */
+  .create{
+    margin-right: auto;
+    margin-left: auto;
+    width: calc((100%/12)*4);
+    font-size: 0.9375rem;
+    height: 81px;
+    text-align: center;
+  }
+  .btn{
+    width: 225px;
+    height: 56px;
+    background-color: #61b818;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 56px;
+    font-size: 1.125rem;
+  }
+  .create a {
+    font-size: 0.9375rem;
+    color: white;
+  }
+  .btn:hover{
+    background-color: #6ed11d;
+  }
+
+  /* Djino */
+  .djino{
+    width: calc((100%/12)*2);
+    min-width: 172px;
+    font-size: 0.9375rem;
+    text-align: center;
+    padding-top: 2%; 
+  }
+  .djino span{
+    font-weight: 800;
+  }
+  #djinoRed {
+    color: black;
+  }
+  #djinoRed span{
+    color: #b22725;
+  }
+
+
+/* Control marking */
+  .grid-item {
+    margin-right: 1.098901098901099%;
+    float: left;
+    width: calc((100% - 1.098901098901099% *11)/12);
+    background-color: lightgreen;
+  }
+
+  .grid-item:last-child {
+    margin-right: 0;
+    float: right;
+  }
+
+/* Radio */
+.radio{
+  float: right;
+  position: relative;
+  margin-right: 10px;
+  top: 400px;
+  width: 1%
+  }
+  .back .radio{
+    top: 240px;
+  }
+
+/* First block */
+.date{
+  margin-right: auto;
+  margin-left: auto;
+  width: calc((100%/12)*2);
+  min-width: 172px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.price {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 9%; 
+  width: calc((100%/12)*8);
+  min-width: 725px;
+  font-size: 4.875rem;
+  text-align: center;
+}
+
+  form.checkDomen {
+    width: calc((100%/12)*8);
+    min-width: 725px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 82px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    line-height: 82px;
+    position: relative;
+    z-index: 1;
+    margin-top: 6%; 
+  }
+
+  form.checkDomen input[type="text"]{
+    float: left;
+    width: calc((166.666666%/12)*5);
+    border: none;
+    padding-left: calc((166.666666%/12)/2);
+    font-family: sans-serif;
+    font-size: 1.375rem;
+    margin: 0;
+    outline: none;
+    height: 82px;
+  }
+
+  form.checkDomen button{
+    width: calc((166.666666%/12)*2);
+    border: none;
+    background-color: #5f6062;
+    padding: 0;
+    margin: 0;
+    height: 53px;
+    font-family: sans-serif;
+    font-size: 1.375rem;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+   
+  }
+  button:focus {
+    outline: none !important
+    }
+    form.checkDomen button:hover{
+      background-color: #667788;
+    }
+
+.inpHide{
+  margin-right: auto;
+  margin-left: auto;
+  width: calc((100%/12)*8);
+  min-width: 725px;
+  opacity: 0.7;
+  font-size: 0.9375rem;
+  height: 82px;
+  background-color: #333333;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+  top: -82px;
+}
+.inpShow{
+  top: -41px;
+  transition: 1.3s; 
+}
+.inpHideText{
+  position: relative;
+  top: 41px;
+  line-height: 41px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.inpHideText a{
+  color:#77b53c;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.arrow{
+  margin-right: auto;
+  margin-left: auto;
+  width: calc((100%/12)*2);
+  font-size: 5.5rem;
+  height: 100px;
+  text-align: center;
+  margin-top: 6%;
+  padding-bottom:16%;
+}
+.arrowDown img:hover{
+  box-shadow: 0 0 12px rgb(198, 207, 247);
+  border-radius: 14px;
+}
+
+/* Second block */
+  .registr {
+    width: calc((100%/12)*8);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.875rem;
+    text-align: center;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .icon::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+.icon1 {
+  float: left;
+  width: calc((100%/12)*3);
+  text-align: center;
+  color: black;
+  margin-bottom: 3%;
+}
+.icon1:hover{
+  -moz-transform: scale(1.2); /* Для Firefox */
+  -ms-transform: scale(1.2); /* Для IE */
+  -webkit-transform: scale(1.2); /* Для Safari, Chrome, iOS */
+  -o-transform: scale(1.2); /* Для Opera */
+  transform: scale(1.2);
+}
+.transform{
+  -moz-transform: scale(1.2); /* Для Firefox */
+  -ms-transform: scale(1.2); /* Для IE */
+  -webkit-transform: scale(1.2); /* Для Safari, Chrome, iOS */
+  -o-transform: scale(1.2); /* Для Opera */
+  transform: scale(1.2);
+}
+.icon1 img {
+  margin-bottom: 3%;
+}
+.hideIconText {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  border: 1px solid gray;
+  position: relative;
+  color: black;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 3%;
+  margin-bottom: 4%;
+}
+
+.hideIconText::before, .hideIconText::after {
+  content: ''; 
+  position: absolute;
+  left: calc((100%/12)*3/2 - 2%); 
+  top: -20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid gray;
+ }
+ .hideIconText::after {
+  border-bottom: 10px solid #f7f7f7;
+  top: -19px; 
+ }
+ .dns::before, .dns::after, .freessl::before, .freessl::after {
+  left: calc((100%/12)*3/2 + (100%/12)*3 - 2%);
+}
+ .certificate::before, .certificate::after,  .dnssec::before, .dnssec::after {
+  left: calc((100%/12)*3/2 + (100%/12)*6 - 1%);
+}
+ .autorenewal::before, .autorenewal::after,  .redirect::before, .redirect::after {
+  left: calc((100%/12)*3/2 + (100%/12)*9 - 1%);
+}
+
+.secondBtn{
+  margin-top: 2%;
+  margin-bottom: 3%;
+} 
+.show {
+  display: inherit;
+}
+.hide {
+  display: none;
+}
+
+/* Third block */
+.why{
+ width: calc((100%/12)*6);
+ min-width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 1.875rem;
+ text-align: center;
+ margin-top: 6%;
+}
+
+.whyText{
+  width: calc((100%/12)*10);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.125rem;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.bonus{
+  background-color: #df4a5e;
+  border-radius: 8px;
+  position: relative;
+  height: 112px;
+  line-height: 112px;
+  margin-top: 3%;
+}
+.bonus::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.bonusText{
+  line-height: normal;
+  float: left;
+  width: calc((100%/12)*9);
+  padding-left: calc((100%/12)/2);
+  font-size: 1.375rem;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bonusText span{
+  font-weight: 800;
+}
+.bonus a {
+  color: white;
+}
+.bonusNum{
+  float: right;
+  width: calc((100%/12)*3);
+  font-size: 3.125rem;
+  text-align: center;
+  
+}
+.bonusNum span::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='512' height='512' fill='white'%3E%3Cpath d='M511.874 201.258l-2.316 82.488c0 7.91-8.107 16.95-16.213 16.95l-186.452 9.04-22.004 180.795c-1.158 9.04-9.265 16.95-19.687 16.95L185.294 512c-9.265 0-16.213-6.78-15.055-15.82l22.004-179.665-176.029 9.04c-9.265 0-16.213-6.78-16.213-15.82l3.474-81.358c1.158-9.04 8.107-18.08 17.371-18.08l185.294-9.04 22.004-180.795c1.158-9.04 9.265-15.82 19.687-16.95l79.908-3.39c9.265-1.13 16.213 5.65 15.055 14.69l-23.162 179.665 177.187-9.04c9.264.001 16.213 6.781 15.055 15.821z'/%3E%3C/svg%3E");
+    content: '+';
+    color: transparent;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.5em;
+}
+.thirdBtn{
+  margin-top: 4%;
+}
+.corp {
+ font-size: 0.8125rem; 
+ font-weight: 100;
+ margin-top:3%;
+ padding-bottom: 3%;
+}
+
+.corp a {
+  color: white;
+  font-size: 0.9375rem; 
+  font-weight: 100;
+}
+
+/* Адаптация под размер экрана */
+
+@media only screen and (max-width: 859px) {
+
+  .back, .back1, .back2 {
+    width: 100%;
+    min-width: calc(819px * 0.6);
+  }
+  .l-wrap {
+    width: 100%;
+    min-width: calc(819px * 0.6);
+  }
+  .price, form.checkDomen, .inpHide  {
+    min-width: calc(725px * 0.6);
+  }
+  .date {
+    min-width: 200px;
+    font-size: 1rem;
+  }
+  .create{
+    width: 100%;
+    height: calc(81px * 0.9);
+  }
+  .btn{
+    width: calc(225px * 0.9) ;
+    height: calc(56px * 0.9);
+    line-height: calc(56px * 0.9);
+    font-size: 1.35rem;
+  }
+  .price{
+    font-size: 2.9rem;
+  }
+  .arrow{
+    display: none;
+  }
+
+  form.checkDomen {
+    height: 70px;
+    line-height: 70px;
+  }
+
+  form.checkDomen input[type="text"]{
+    font-size: 1.8rem;
+    height: 70px;
+  }
+
+  form.checkDomen button{
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  .inpHide{
+    height: 70px;
+    top: -70px;
+  }
+  .inpShow{
+    top: -35px;
+    transition: 1.3s; 
+  }
+  .inpHideText{
+    top: 30px;
+    font-size: 0.95rem;
+  }
+  .inpHideText a{
+    font-size: 1rem;
+  }
+  .djino{
+    font-size: 1.1rem;
+    margin-bottom: 3%;
+  }
+
+/* Second block */
+  .icon1 {
+    font-size: 1rem;
+  }
+  .icon1 img {
+    transform:scale(0.9);
+    -o-transform:scale(0.9);
+    -ms-transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+  }
+  .icon1:hover{
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .transform{
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    transform: none;
+  } 
+  .hideIconText {
+    font-size: 1.3rem;
+  }
+/* Third block */
+  .why{
+    font-size: 1.6rem;
+  }
+  
+  .whyText{
+    font-size: 1.8rem;
+    margin-bottom: 3%;
+  }
+  
+  .bonus{
+    height: calc(112px * 0.9);
+    line-height: calc(112px * 0.9);
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bonusText{
+    font-size: 1.4rem;
+  }
+  .bonusNum{
+    font-size: 2.4rem; 
+  }
+
+  .corp {
+    font-size: 1.1rem; 
+    margin-left: 2%;
+  }
+  
+  .corp a {
+    font-size: 1.1rem; 
+  }
+  .radio{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .back, .back1, .back2 {
+    width: 100%;
+
+    min-width: calc(819px * 0.3);
+  }
+  .l-wrap {
+    width: 100%;
+    min-width: calc(819px * 0.3);
+  }
+  .price, form.checkDomen, .inpHide  {
+    min-width: calc(725px * 0.4);
+  }
+  .date {
+    min-width: 172px;
+    font-size: 0.75rem;
+  }
+  .create{
+    width: 100%;
+    height: calc(81px * 0.6);
+  }
+  .btn{
+    width: calc(225px * 0.6) ;
+    height: calc(56px * 0.6);
+    line-height: calc(56px * 0.6);
+    font-size: 1.1rem;
+  }
+  .price{
+    font-size: 2rem
+  }
+  .arrow{
+    display: none;
+  }
+  form.checkDomen {
+    height: 60px;
+    line-height: 60px;
+  }
+  form.checkDomen input[type="text"]{
+    font-size: 1.5rem;
+    height: 60px;
+  }
+  form.checkDomen button{
+    height: 40px;
+    font-size: 1.05rem;
+  }
+  .inpHide{
+    height: 60px;
+    top: -60px;
+
+  }
+  .inpShow{
+    top: -30px;
+    transition: 1.3s; 
+  }
+  .inpHideText{
+    line-height: 16px;
+    font-size: 1rem;
+  }
+  .inpHideText a{
+    font-size: 1rem;
+  }
+  .djino{
+    font-size: 0.8rem;
+    margin-bottom: 3%;
+  }
+
+/* Second block */
+  .icon1 {
+    font-size: 0.6rem;
+  }
+  .icon1 img {
+    transform:scale(0.8);
+    -o-transform:scale(0.8);
+    -ms-transform:scale(0.8);
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+  }
+  .hideIconText {
+    font-size: 0.9rem;
+    margin: 2%;
+  }
+/* Third block */
+  .why{
+    width: calc((100%/12)*6);
+    min-width: calc(500px * 0.4);
+    font-size: 1.2rem;
+  }
+  
+  .whyText{
+    font-size: 1.6rem;
+    margin-bottom: 3%;
+  }
+
+  .bonus{
+    height: calc(112px * 0.9);
+    line-height: calc(112px * 0.9);
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bonusText{
+    font-size: 0.9rem;
+  }
+  .bonusNum{
+    font-size: 1.6rem; 
+  }
+  .corp {
+    font-size: 0.7rem; 
+    margin-top:3%;
+    margin-left: 2%;
+    padding-bottom: 3%;
+  }
+ .corp a {
+   font-size: 0.7rem; 
+ }
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  form.checkDomen button {
+      height: inherit;
+   }
+  }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="registrStyle.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    
+    <div class="l-wrap">
+        <div class="accountText">
+            <div class = "headText">Подтверждение аккаунта</div>
+            <br>
+            <p>Для подтверждения вашего аккаунта вам нужно заполнить все поля, подтвердить 
+            почтовый ящик и телефон, а также загрузить сканы ваших документов</p>
+        </div>
+    </div>
+
+    <div class="l-wrap">
+        <div class="formLoad">
+            <div class="img">
+                <div class="imgBorder">
+                    <img src="img/upload.svg" alt="upload">
+                </div>
+            </div>
+            <form id="uploadContainer" method="POST" action="#">
+                    <input id="fileInput" type="file" name="file" multiple>
+                    <label for="fileInput">Загрузить скан страницы с фотографией</label>
+                    <p>Размер файла не более 5Мб</p>
+            </form>
+        <div class="status upload"></div>
+    </div>
+    </div>
+
+    <div class="l-wrap wait">
+        <div class="formLoad">
+            <div class="img">
+                <div class="imgBorder">
+                    <div id = "floatingCirclesG">
+                    	<div class="f_circleG" id="frotateG_01"></div>
+                        <div class="f_circleG" id="frotateG_02"></div>
+                        <div class="f_circleG" id="frotateG_03"></div>
+                        <div class="f_circleG" id="frotateG_04"></div>
+                        <div class="f_circleG" id="frotateG_05"></div>
+                        <div class="f_circleG" id="frotateG_06"></div>
+                        <div class="f_circleG" id="frotateG_07"></div>
+                        <div class="f_circleG" id="frotateG_08"></div>
+                    </div>
+                   <img class="waitOk" src="img/ok.svg" alt="ok">
+                </div>
+            </div>
+            <div  class="text">
+                <div>
+                    <div class="textValue">Загружается скан страницы</div>
+                    <p class="pWait"></p>
+                </div>
+            </div>
+            <div class="status"></div>
+        </div>
+    </div>
+
+    <div class="l-wrap loading">
+        <div class="formLoad">
+            <div class="img">
+                <div class="imgBorder">
+                    <div class="cssload-clock"></div>
+                    <img class="loadingOk" src="img/ok.svg" alt="ok">
+                </div>
+            </div>
+            <div  class="text">
+                <div>
+                    <div class="textValue">Файл загружен</div>
+                    <p class="pLoading"></p>
+                </div>
+            </div>
+            <div class="status checkFile">Идет проверка</div>
+        </div>
+    </div>
+
+    <div class="l-wrap done">
+        <div class="formLoad">
+            <div class="img">
+                <div class="imgBorder">
+                    <img src="img/ok.svg" alt="ok">
+                </div>
+            </div>
+            <div  class="text">
+                <div>
+                    <div class="textValue">Страница с пропиской</div>
+                    <p class="pDone"></p>
+                </div>
+            </div>
+        <div class="status finOfDone">Проверено</div>
+        </div>
+    </div>
+
+        <!-- <div class="l-wrap">
+            <div class="col-grid">
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+                <div class="grid-item">Элемент сетки</div>
+            </div>
+        </div> -->
+
+    <div class="l-wrap">
+        <form class="variant">
+            <h4>Вариант выполнения программы:</h4>
+            <p><label><input type="radio" name="var" value="rand" checked>Произвольный результат</label></p>
+            <p><label><input type="radio" name="var" value="plus">Положительный результат</label></p>
+            <p><label><input type="radio" name="var" value="minus">Отрицательный результат</label></p>
+            <div class="clear">Очистить результат</div>
+        </form>
+    </div>
+
+    <script src="script/registrScript.js"></script>
+    
+</body>
+</html>
